@@ -13,7 +13,8 @@
             array_push($json['chat'], [
                 "pseudo" => $pseudo, 
                 "message" => $message, 
-                "date" => date('d/m/Y H:i')
+                "date" => date('d/m/Y H:i'),
+                "ip" => $_SERVER
             ]);
             $str = json_encode($json, JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT);
             file_put_contents(__DIR__.'/../data/chat.json', $str);

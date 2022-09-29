@@ -14,8 +14,8 @@ body {
 }
 
 .darker {
-    border-color: #ccc;
-    background-color: #ddd;
+    border-color: #dedede;
+    background-color: #18bfc7;
 }
 
 .container::after {
